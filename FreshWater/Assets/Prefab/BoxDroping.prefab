@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1050363874575160623
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1050363874575160620}
+  - component: {fileID: 1050363874575160621}
+  m_Layer: 0
+  m_Name: BoxDroping
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1050363874575160620
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1050363874575160623}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 12, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1050363874575160621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1050363874575160623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b96f40ae58b5131468c099482bad2bd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xLimit: 2.5
+  xPositions:
+  - -1.75
+  - -1.05
+  - -0.35
+  - 0.35
+  - 1.75
+  - 1.05
+  - -2.45
+  - 2.45
+  enemyPrefabs:
+  - {fileID: 1398834053142263238, guid: 303ad529c2fc6354581ee3e9270fbca0, type: 3}
+  - {fileID: 3466079742522913643, guid: 459d000f9395a6f488765599d5a07d6d, type: 3}
+  warning: {fileID: 8226805307158133947, guid: 7caf7f4fa8e92d14c84640a73a82cadf, type: 3}
+  wave:
+  - delayTime: 2
+    spawnAmount: 2
+  - delayTime: 2
+    spawnAmount: 3
+  - delayTime: 2
+    spawnAmount: 1
+  - delayTime: 2
+    spawnAmount: 2
+  currentTime: 15
